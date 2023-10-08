@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eclipse Solar Anular</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="../img/icono.png" type="image/x-icon">
+    <title>Eclipses</title>
+    <style>
+              *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-image: url('../recursos/fondo.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    min-height: 100vh; 
+}
+
+        .eclipse-image {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .container {
+    background-color: #333;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+        iframe {
+            margin: 0 auto;
+            display: block;
+            width: 70%;
+            height: 340px;
+        }
+        header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  height: 100px;
+  padding: 0 30px;
+}
+
+        .content h4 {
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+        footer {
+            
+            position: relative;
+            padding: 55px 0;
+            z-index: 1; 
+        }
+        
+                    footer ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    }
+        
+                    footer ul li {
+                    margin-right: 30px;
+                    color: #aaa;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    line-height: 2.5;
+                    }
+        
+                    footer ul li a {
+                    color: #fff;
+                    transition: color 0.6s;
+                    }
+        
+                    footer ul li a:hover {
+                    color: #aaa;
+                    }
+                    @media (max-width: 600px) {
+        
+          .content {
+            font-size: 4em; 
+          }
+        }
+        button {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+}
+
+button:before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all .42s cubic-bezier(.25,.8,.25,1);
+  width: 0;
+}
+
+button:hover:before {
+  background-color: #fff;
+  width: 3rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <button>
+            <a href="./ecp4.html" >Regresar</a>
+          </button>
+    </header>
+    <div class="container">
+        <div class="content pl-3 pr-3 pt-3">
+            <h4 class="text-center mt-3 mb-3">¿Qué es un eclipse solar anular?</h4>
+            <div class="row mb-3">
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="center-text">Un eclipse solar anular ocurre cuando la Luna pasa por delante del Sol, pero no lo cubre completamente. Esto ocurre cuando el Sol, la Luna y la Tierra no están perfectamente alineados y la Luna está en su apogeo, su punto más alejado de la Tierra. Los eclipses solares anulares son eventos menos comunes que los eclipses solares totales. Ocurren aproximadamente una vez cada tres años.</p>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <img class="eclipse-image" src="../recursos/eclipse_solar_anular.jpg" alt="Eclipse Solar Total">
+                </div>
+                
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <h4 class="text-center mb-3 mt-3">Aparición</h4>
+                    <iframe src="../recursos/eclipse_solar_anular_video.mp4" frameborder="0" allowfullscreen></iframe>
+                    <p class="text-center mt-3">Nota periodística del noticiero Cadena Tres acerca de un eclipse solar anular que tuvo lugar el domingo 20 de mayo de 2012.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <h4 class="text-center">Fases de un eclipse solar total</h4>
+                    <ul class="mt-3">
+                        <li>Penumbral: La Luna comienza a bloquear la luz del Sol, pero solo una parte del disco solar está oculta.</li>
+                        <li>Parcial: La Luna bloquea cada vez más el disco solar, hasta que solo queda un pequeño anillo de luz solar visible.</li>
+                        <li>Anular: La Luna bloquea la mayor parte del disco solar, dejando un anillo de luz solar visible alrededor de la Luna.</li>
+                        <li>Postpenumbral: La Luna comienza a moverse fuera del camino de la luz del Sol, y el eclipse termina.</li>                    
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <h4 class="text-center">Datos adicionales</h4>
+                    <ul class="mt-3">
+                        <li>Durante un eclipse solar anular, la Luna bloquea la mayor parte del disco solar, dejando un anillo de luz solar visible alrededor de la Luna. Este anillo de luz es lo que le da a los eclipses solares anulares su nombre, "anillo de fuego".</li>
+                        <li>El diámetro angular de la Luna es aproximadamente el mismo que el del Sol. Sin embargo, la Luna está más lejos de la Tierra en su apogeo que en su perigeo. Esto hace que la Luna parezca más pequeña en el cielo, y que no pueda cubrir completamente el disco solar.</li>
+                        <li>La banda de anularidad de un eclipse solar anular es relativamente estrecha. Por lo general, solo unos pocos cientos de kilómetros de ancho.</li>
+                        <li>Los eclipses solares anulares ocurren aproximadamente una vez cada tres años.</li>
+                        <li>Los eclipses solares anulares son eventos relativamente seguros para ver, siempre que se tomen las precauciones adecuadas. Es importante usar un filtro solar especial para telescopios o gafas de sol con filtros solares aprobados por la NASA.</li>
+                        <li>La magnitud máxima de un eclipse solar anular es de 1,0. Esto significa que la Luna bloquea el 100% del disco solar. Sin embargo, esto solo ocurre cuando la Luna está en su perigeo, el punto más cercano a la Tierra.</li>
+                        <li>La magnitud de un eclipse solar anular puede variar de 0,0 a 1,0. La magnitud de un eclipse solar anular es menor cuando la Luna está en su apogeo, el punto más alejado de la Tierra.</li>
+                        <li>Los eclipses solares anulares pueden ser muy útiles para los científicos. Al estudiar los cambios en la magnitud de un eclipse solar anular, los científicos pueden aprender más sobre la órbita de la Luna y la evolución del Sol.</li>
+                        <li>El eclipse solar anular más largo registrado duró 6 horas y 39 minutos. Ocurrió el 3 de noviembre de 1994 en el Océano Índico.</li>
+                        <li>El eclipse solar anular más reciente visible desde América del Norte ocurrió el 14 de octubre de 2023. La sombra de la Luna pasó por el norte de Canadá y Groenlandia.</li>
+                        <li>El próximo eclipse solar anular visible desde América del Norte ocurrirá el 2 de agosto de 2024. La sombra de la Luna pasará por el sur de Canadá y Estados Unidos.</li>
+                        <li>Los eclipses solares anulares se pueden ver desde cualquier lugar de la Tierra, excepto en los polos.</li>
+                        <li>Los eclipses solares anulares se pueden ver con el ojo desnudo, pero solo durante la fase anular.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li id="year">TEAMSOFT &copy; 2023</li>
+            <li><a href="https://github.com/ByronMG/TEAMSOFT.git" target="_blank">GitHub</a></li>
+        </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

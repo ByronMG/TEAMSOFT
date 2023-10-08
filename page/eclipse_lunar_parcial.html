@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eclipse Lunar Parcial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="../img/icono.png" type="image/x-icon">
+    <title>Eclipses</title>
+    <style>
+        
+        *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-image: url('../recursos/fondo.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    min-height: 100vh; 
+}
+
+
+        .eclipse-image {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .container {
+    background-color: #333;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+        iframe {
+            margin: 0 auto;
+            display: block;
+            width: 87.5%;
+            height: 360px;
+        }
+        header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  height: 100px;
+  padding: 0 30px;
+}
+
+        .content h4 {
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+        footer {
+            
+    position: relative;
+    padding: 55px 0;
+    z-index: 1; 
+}
+
+            footer ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            }
+
+            footer ul li {
+            margin-right: 30px;
+            color: #aaa;
+            text-transform: uppercase;
+            font-size: 13px;
+            line-height: 2.5;
+            }
+
+            footer ul li a {
+            color: #fff;
+            transition: color 0.6s;
+            }
+
+            footer ul li a:hover {
+            color: #aaa;
+            }
+            @media (max-width: 600px) {
+
+  .content {
+    font-size: 4em; 
+  }
+}
+button {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+}
+
+button:before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all .42s cubic-bezier(.25,.8,.25,1);
+  width: 0;
+}
+
+button:hover:before {
+  background-color: #fff;
+  width: 3rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <button>
+            <a href="./ecp1.html" >Regresar</a>
+          </button>
+    </header>
+    <div class="container">
+        <div class="content pl-3 pr-3 pt-3">
+            <h4 class="text-center mt-3 mb-3">¿Qué es un eclipse lunar parcial?</h4>
+            <div class="row mb-3">
+                <div class="col-md-7 d-flex align-items-center">
+                    <p class="center-text">Un eclipse lunar parcial ocurre cuando la Luna pasa a través de la sombra de la Tierra, pero solo una parte de la Luna entra en la umbra. Esto ocurre cuando el Sol, la Tierra y la Luna no están perfectamente alineados. Durante un eclipse lunar parcial, la Luna se oscurece gradualmente a medida que se adentra en la sombra de la Tierra. Los eclipses lunares parciales son eventos más comunes que los eclipses lunares totales. Ocurren aproximadamente dos veces al año.</p>
+                </div>
+                <div class="col-md-5 d-flex align-items-center">
+                    <img class="eclipse-image" src="../recursos/eclipse_lunar_parcial.jpg" alt="Eclipse Solar Total">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <h4 class="text-center mb-3 mt-3">Aparición</h4>
+                    <iframe src="../recursos/eclipse_lunar_parcial_video.mp4" frameborder="0" allowfullscreen></iframe>
+                    <p class="text-center mt-3">Nota periodística del noticiero Noticias Telemundo sobre un eclipse lunar parcial que ocurrio el 18 de novimientro de 2021.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <h4 class="text-center">Fases de un eclipse lunar parcial</h4>
+                    <ul class="mt-3">
+                        <li>Penumbra: La Luna comienza a entrar en la sombra de la Tierra, pero solo una parte del disco lunar está oscurecida.</li>
+                        <li>Parcial: La Luna se oscurece gradualmente a medida que se adentra en la sombra de la Tierra.</li>
+                        <li>Postumbra: La Luna comienza a salir de la sombra de la Tierra, y el eclipse termina.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <h4 class="text-center">Datos adicionales</h4>
+                    <ul class="mt-3">
+                        <li>La duración de un eclipse lunar parcial puede variar de 30 minutos a 2 horas.</li>
+                        <li>La magnitud de un eclipse lunar parcial se define como la fracción del disco lunar que está oscurecida por la sombra de la Tierra.</li>
+                        <li>Los eclipses lunares parciales pueden ocurrir en cualquier lugar de la Tierra.</li>
+                        <li>Los eclipses lunares parciales se han observado durante miles de años. Se mencionan en textos antiguos de civilizaciones de todo el mundo.</li>
+                        <li>Los eclipses lunares parciales son un símbolo de mala suerte en algunas culturas.</li>
+                        <li>El eclipse lunar parcial más largo registrado duró 3 horas y 28 minutos. Ocurrió el 19 de agosto de 2018.</li>
+                        <li>El eclipse lunar parcial más reciente visible desde América del Norte ocurrió el 14 de octubre de 2023. La sombra de la Luna pasó por el norte de Canadá y Groenlandia.</li>
+                        <li>El próximo eclipse lunar parcial visible desde América del Norte ocurrirá el 2 de agosto de 2024. La sombra de la Luna pasará por el sur de Canadá y Estados Unidos.</li>
+                        <li>La magnitud máxima de un eclipse lunar parcial es de 1,0. Esto significa que la Luna está completamente dentro de la sombra de la Tierra. Sin embargo, esto solo ocurre cuando la Luna está en su perigeo, el punto más cercano a la Tierra.</li>
+                        <li>La magnitud de un eclipse lunar parcial puede variar de 0,0 a 1,0. La magnitud de un eclipse lunar parcial es menor cuando la Luna está en su apogeo, el punto más alejado de la Tierra.</li>
+                        <li>Los eclipses lunares parciales son eventos relativamente seguros para ver, siempre que se tomen las precauciones adecuadas. Es importante usar un filtro solar especial para telescopios o gafas de sol con filtros solares aprobados por la NASA.</li>        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+     <footer>
+        <footer>
+            <ul>
+                <li id="year">TEAMSOFT &copy; 2023</li>
+                <li><a href="https://github.com/ByronMG/TEAMSOFT.git" target="_blank">GitHub</a></li>
+            </ul>
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

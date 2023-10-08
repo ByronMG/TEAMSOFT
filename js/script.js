@@ -4,6 +4,10 @@ const menu = document.getElementById('mobile-menu');
 const counters = document.querySelectorAll('.counter');
 let scrollStarted = false;
 
+const yearElement = document.getElementById('year');
+const currentYear = new Date().getFullYear();
+yearElement.textContent = `TEAMSOFT ${currentYear}`;
+
 btn.addEventListener('click', navToggle);
 document.addEventListener('scroll', scrollPage);
 
