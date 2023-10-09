@@ -9,6 +9,7 @@
   <link rel="icon" href="./img/icono.png" type="image/x-icon">
   <title>Eclipses</title>
 
+    <link rel="stylesheet" href="./animations/eclipse6/css/main.css">
 </head>
 
 <body>
@@ -145,10 +146,9 @@
           >
           <circle class="fa-primary" cx="256" cy="256" r="240" fill="#007BFF" />
         </svg>
-          <span class="link-text">Preguntas</span>
+          <span class="link-text">Preguntas frecuentes</span>
         </a>
       </li>
-      
 
       <li class="nav-item" id="themeButton">
         <a href="#" class="nav-link">
@@ -227,19 +227,36 @@
               ></path>
             </g>
           </svg>
-          <span class="link-text">Themify</span>
+          <span class="link-text">Cambiar Tema</span>
         </a>
       </li>
     </ul>
   </nav>
 
   <main>
+
     <h1>Eclipse solar total</h1>
-    <button onclick="window.location.href='eclipse_solar_total.html'">Ver más...</button>    <div class="content">
-      <div class="sun">
-          <div class="shadow"></div>
+    <button onclick="window.location.href='eclipse_solar_total.html'">Más información</button><br/><br/>
+    <label id="txtaceleracion" for="aceleracion">Velocidad:</label>
+    <input type="range" id="aceleracion" min="0" max="20" step="0.5" value="2" />
+    
+    <div class="content">
+      <div id="contenedor">
+        <div id="sol"></div>
+            
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+        <div id="line4"></div>
+
+        <div id="luna"></div>
+        <div id="tierra"></div>
+        <div id="triangulo-inverso"></div>
       </div>
-  </div>
+    </div>
+
   </main>
   <script src="./js/theme.js"></script>
+  <script src="./animations/eclipse6/js/main.js"></script>
+
 </body>

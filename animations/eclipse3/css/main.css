@@ -1,0 +1,116 @@
+@import url(desplazamientos.css);
+
+body {
+  background: url('../../../animations/img/espacio.jpg'); 
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+  z-index: 0;
+  overflow-y: hidden;
+}
+#contenedor{
+  margin-left: -200%;
+  width: 70%;
+  height: 100%; 
+}
+
+#txtaceleracion {
+  color: white;
+  font-weight: bold;
+}
+
+
+
+#line1, #line2,#line3, #line4 {
+  height: 1px;
+  background-color: yellow;
+  position: absolute;
+  transform-origin: 0% 0%;
+  width: 800px;
+  margin-left: 100px;
+}
+#line2, #line4 {margin-top: 200px; }
+
+#line1 {
+  transform: rotate(13.3deg);
+  animation: linea1 2s alternate infinite ease-in-out;
+}
+#line2 {
+  transform: rotate(-13.3deg);
+  animation: linea2 2s alternate infinite ease-in-out;
+}
+
+#line3 {
+  transform: rotate(11.3deg);
+  animation: linea3 2s alternate infinite ease-in-out;
+}
+#line4 {
+  animation: linea4 2s alternate infinite ease-in-out;
+}
+
+
+
+#sol, #luna, #tierra {
+  position: absolute;
+  border-radius: 50%;
+}
+#sol, #triangulo, #triangulo-inverso, #tierra{
+  z-index: 5;
+}
+
+#sol {
+  width: 200px;
+  height: 200px;
+  background: url('../../../animations/img/sol.jpg') center/cover;
+  float: left;
+  margin-left: 0px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 900px 40px rgba(255, 255, 255, 1), 0px 0px 20px 5px rgb(255, 255, 0) inset;
+}
+#luna {
+  z-index: 6;
+  width: 25px;
+  height: 25px;
+  background: url('../../../animations/img/luna.png') center/cover;
+  box-shadow: -20px 0px 10px -10px rgb(0 , 0, 0) inset;
+  float: left;
+  margin-left: 570px;
+  margin-top: 87.5px;
+}
+#tierra {
+  width: 100px;
+  height: 100px;
+  background: url('../../../animations/img/planeta.jpg') center/cover;
+  box-shadow: -10px 0px 60px 0px rgba(0, 0, 0) inset, 
+              -10px 0px 20px -4px rgb(0 , 0, 0) inset;
+  margin-top: 50px;
+  margin-left: 680px;
+}
+
+#triangulo {
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 730px;
+  margin-top: 25px;
+  width: 50px;
+  z-index: 4;
+
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  border-top: 0px solid transparent;
+  border-bottom: solid black 150px;
+
+  transform: rotate(90deg);
+  opacity: 0.4;
+}
+
+
+#sol {
+  animation: scroll-sol 4s linear infinite;
+}
+#luna {
+  animation: scroll-luna 4s linear infinite, eliptico 2s ease-in-out alternate infinite, ocultar-luna 4s infinite;
+}
+#tierra {
+  animation: scroll-tierra 4s linear infinite;
+}

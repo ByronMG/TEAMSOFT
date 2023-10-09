@@ -1,0 +1,91 @@
+@keyframes scroll-tierra {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -239% 0;
+  }
+}
+@keyframes scroll-luna {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -201% 0;
+  }
+}
+@keyframes scroll-sol {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -304% 0;
+  }
+}
+
+
+@keyframes eliptico {
+  0% {
+    transform: translateX(0px);
+    z-index: 6;
+  }
+  100% {
+    transform: translateX(260px);
+    z-index: 6;
+  }
+}
+
+
+
+@keyframes linea1 {
+  0%{
+    transform: rotate(13.45deg);
+    animation-timing-function: cubic-bezier(0.48,0.2,0.2,0.6);
+  }
+  100%{
+    transform: rotate(8.55deg);
+  }
+}
+@keyframes linea2 {
+  0%{
+    transform: rotate(-13.45deg);
+    animation-timing-function: cubic-bezier(0.48,0.2,0.2,0.6);
+  }
+  100%{
+    transform: rotate(-8.55deg);
+  }
+}
+
+
+@keyframes linea3 {
+  0%{
+    transform: rotate(10.12deg);
+    animation-timing-function: cubic-bezier(0.5,0.2,0.2,0.5);
+  }
+  100%{
+    transform: rotate(6.5deg);
+  }
+}
+@keyframes linea4 {
+  0%{
+    transform: rotate(-10.12deg);
+    animation-timing-function: cubic-bezier(0.5,0.2,0.2,0.5);
+  }
+  100%{
+    transform: rotate(-6.5deg);
+  }
+}
+
+
+
+
+
+@keyframes ocultar-triangulo {
+  0%, 100% { opacity: 0.4; }
+  30% { opacity: 0.1; }
+}
+@keyframes ocultar-luna {
+  0%, 100% { opacity: 1; }
+  30%, 60% { opacity: 0.3; }
+}
+

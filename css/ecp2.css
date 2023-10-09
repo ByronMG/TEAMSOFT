@@ -1,20 +1,21 @@
 :root {
-    font-size: 16px;
-    font-family: 'Open Sans';
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
-    --transition-speed: 600ms;
-  }
-
-  body {
-    background-color: black; 
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
 }
-h1{
+
+body {
+  background-color: black; 
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+  
+h1 {
     color: white;
 }
 
@@ -41,7 +42,8 @@ h1{
     height: 170px;
     width: 170px;   
     border-radius: 50%;
-    background-color: transparent; 
+    background-color: transparent;
+    border-color: transparent;
     top: -5px;
     left: 0px;
     position: relative;
@@ -51,15 +53,21 @@ h1{
 @keyframes moveshadow {
     0% {
         transform: translateX(-10px);
-
+        background-color: #C5C4C3;
+        border-color: #C5C4C3;
+    }
+    50% {
+      transform: translateX(20px);
+      background-color: #757575;
+      border-color: #757575;
     }
     100% {
         transform: translateX(50px);
         background-color: #C5C4C3;
+        border-color: #C5C4C3;
     }
 }
 
-/* -----------------------------------------------------------------------*/
 button {
     background-color: #007BFF;
     color: white; 
@@ -73,7 +81,6 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-/*------------------------------------------------------------------------*/
   
   body::-webkit-scrollbar {
     width: 0.25rem;
@@ -186,7 +193,6 @@ button:hover {
     transform: rotate(-180deg);
   }
   
-  /* Small screens */
   @media only screen and (max-width: 600px) {
     .navbar {
       bottom: 0;
@@ -211,7 +217,6 @@ button:hover {
     }
   }
   
-  /* Large screens */
   @media only screen and (min-width: 600px) {
     .navbar {
       top: 0;

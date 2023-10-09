@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fuentes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="./img/icono.png" type="image/x-icon">
+    <style>
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url('./recursos/fondo.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        margin: 0;
+        min-height: 100vh; 
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container {
+        background-color: #333;
+        padding: 40px;
+        border: 1px solid #888;
+        max-width: 850px;
+        margin: 50px auto;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    iframe {
+        margin: 0 auto;
+        display: block;
+        width: 87.5%;
+        height: 360px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        height: 100px;
+        padding: 0 30px;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .content ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .content ul li {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        background-color: #555;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #333;
+    }
+
+    footer {
+        position: relative;
+        padding: 55px 0;
+        z-index: 1; 
+    }
+        
+    footer ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+        
+    footer ul li {
+        margin-right: 30px;
+        color: #aaa;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 2.5;
+    }
+        
+    footer ul li a {
+        color: #fff;
+        transition: color 0.6s;
+    }
+        
+    footer ul li a:hover {
+        color: #aaa;
+    }
+
+    @media (max-width: 600px) {    
+        .content {
+        font-size: 4em; 
+        }
+    }
+
+    button {
+        align-items: center;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5;
+        text-decoration: none;
+        text-transform: uppercase;
+        outline: 0;
+        border: 0;
+        padding: 1rem;
+    }
+
+    button:before {
+        background-color: #fff;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        margin-right: 10px;
+        transition: all .42s cubic-bezier(.25,.8,.25,1);
+        width: 0;
+    }
+
+    button:hover:before {
+        background-color: #fff;
+        width: 3rem;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <button>
+            <a href="index.html" >Regresar</a>
+          </button>
+    </header>
+    <div class="container">
+        <div class="content pl-3 pr-3 pt-3">
+            <h3 class="text-center mb-4">Fuentes utilizadas en este proyecto</h3>
+            <h4 class="mb-3 mt-3">Fuentes web</h4>
+            <ul>
+                <li>NASA Space Place. (2023, 10 de agosto). Eclipses lunares y solares. Recuperado de https://spaceplace.nasa.gov/eclipses/sp/</li>
+                <li>Exploratorium. (2023, 1 de julio). ¿Qué es un eclipse lunar y una luna de sangre? Recuperado de https://www.exploratorium.edu/</li>
+                <li>National Geographic. (2023, 1 de julio). ¿Qué son los eclipses y cuántos tipos hay? Recuperado de https://www.nationalgeographic.com/</li>
+                <li>Eclipses - NASA Science. (2023, 1 de julio). Eclipses. Recuperado de https://science.nasa.gov/eclipses/</li>
+                <li>"Eclipses." Wikipedia, la enciclopedia libre, Wikimedia Foundation, 20 de julio de 2023, https://es.wikipedia.org/wiki/Eclipse</li>
+            </ul>
+            <h4 class="mb-3 mt-3">Fuentes multimedia</h4>
+            <ul>
+                <li>Todo Noticias (2019, 5 de julio). Eclipse total de Sol como nunca lo viste - [ECLIPSE COMPLETO]. Youtube. https://youtu.be/rd64Xg6U3Yo</li>
+                <li>Imagen Noticias (2012, 21 de mayo). Espectacular eclipse anular de Sol. Youtube. https://youtu.be/Khs9G_CwEEs</li>
+                <li>El universal (2022, 25 de octubre). Así se vio el impresionante eclipse parcial de Sol. Youtube. https://youtu.be/AlgnJyjE9aI</li>
+                <li>Griffith Observatory (2018, 31 de enero). 2018 Total Lunar Eclipse Timelapse | Griffith Observatory. Youtube. https://youtu.be/buXTecdfqxo</li>
+                <li>Noticias Telemundo (2021, 19 de noviembre). Así se vio la 'luna de sangre', el eclipse lunar parcial más largo del siglo | Noticias Telemundo. Youtube. https://youtu.be/ot7JsbK7dU4</li>
+                <li>Galeria Lunar Penumbral (2013, 15 de octubre). Eclipse Lunar Penumbral  https://youtu.be/pw7Sh4FBVbc</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li id="year">TEAMSOFT &copy; 2023</li>
+            <li><a href="https://github.com/ByronMG/TEAMSOFT.git" target="_blank">GitHub</a></li>
+        </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -9,10 +9,14 @@
   }
 
 body {
-    background-color: white;
+    background-color: #000000;
     animation: dayToNight 10s infinite 1.5s;
     margin: 0;
     padding: 0;
+}
+
+h1 {
+  color: white;
 }
 
 .content {
@@ -35,7 +39,7 @@ body {
     height: 170px;
     width: 170px;   
     border-radius: 50%;
-    background-color: white;
+    background-color: transparent;
     top: -5px;
     left: 0px;
     animation: moveshadow 10s infinite 1.5s;
@@ -44,31 +48,30 @@ body {
 @keyframes moveshadow {
     0% {
         transform: translateX(150px);
-        background-color: white;
+        background-color: black;
     }
     50% {
         transform: translateX(50px);
         background-color: black;
     }
     100% {
-        transform: translateX(-170px);
-        background-color: white;
+        transform: translateX(-180px);
+        background-color: black;
     }
 }
 
 @keyframes dayToNight {
     0% {
-        background-color: white;
+        background-color: black;
     }
     50% {
         background-color: black;
     }
     100% {
-        background-color: white;
+        background-color: black;
     }
 }
 
-/* -----------------------------------------------------------------------*/
 button {
     background-color: #007BFF;
     color: white; 
@@ -82,7 +85,6 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-/*------------------------------------------------------------------------*/
 
   body::-webkit-scrollbar {
     width: 0.25rem;
@@ -195,7 +197,6 @@ button:hover {
     transform: rotate(-180deg);
   }
   
-  /* Small screens */
   @media only screen and (max-width: 600px) {
     .navbar {
       bottom: 0;
@@ -220,7 +221,6 @@ button:hover {
     }
   }
   
-  /* Large screens */
   @media only screen and (min-width: 600px) {
     .navbar {
       top: 0;

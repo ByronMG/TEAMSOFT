@@ -8,20 +8,14 @@
     --transition-speed: 600ms;
   }
 
-  body {
-    background-color: black;
-    animation: dayToNight 10s infinite 1.5s;
-    margin: 0;
-    padding: 0;
-}
 h1{
     color: white;
 }
 
 .content {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 27%;
     transform: translate(-50%, -50%);
     display: block;
 }
@@ -30,32 +24,49 @@ h1{
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: #fcd25b;
-    border: 3px solid #fcd25b;
+    background-color: #C5C4C3;
+    border: 3px solid #C5C4C3;
+    animation: sunanimation 10s infinite 1.5s;
 }
 
 .shadow {
     height: 170px;
     width: 170px;   
     border-radius: 50%;
-    background-color: black;
-    top: -5px;
+    background-color: transparent;
     left: 0px;
     animation: moveshadow 10s infinite 1.5s;
 }
 
+@keyframes sunanimation {
+    0% {
+      background-color: #C5C4C3;
+      border-color: #C5C4C3;
+    }
+    
+    55% {
+      background-color: #C5C4C3;
+      border-color: #C5C4C3;
+    }
+    
+    100% {
+      border-color: #fa6a46;
+      background-color: #fa6a46;
+  }
+}
+
 @keyframes moveshadow {
     0% {
-        transform: translateX(150px);
-        background-color: white;
+        transform: translateX(-170px);
+        background-color: black;
     }
-    100% {
+    50% {
         transform: translateX(-10px);
         background-color: black;
     }
-    0% {
-        transform: translateX(-170px);
-        background-color: white;
+    100% {
+        transform: translateX(-10px);
+        background-color: transparent;
     }
 }
 
@@ -70,7 +81,7 @@ h1{
         background-color: black;
     }
 }
-/* -----------------------------------------------------------------------*/
+
 button {
     background-color: #007BFF;
     color: white; 
@@ -84,9 +95,7 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-/*------------------------------------------------------------------------*/
-  
-  
+
   body::-webkit-scrollbar {
     width: 0.25rem;
   }
@@ -198,7 +207,6 @@ button:hover {
     transform: rotate(-180deg);
   }
   
-  /* Small screens */
   @media only screen and (max-width: 600px) {
     .navbar {
       bottom: 0;
@@ -223,7 +231,6 @@ button:hover {
     }
   }
   
-  /* Large screens */
   @media only screen and (min-width: 600px) {
     .navbar {
       top: 0;
