@@ -1,6 +1,6 @@
 # TEAMSOFT
 <div style="text-align: center;">
-	<img src="[https://res.cloudinary.com/dpjtl8zu1/image/upload/v1696370295/LOGO_cmmin8.png](https://i.postimg.cc/7DJrT5bf/11.png)">
+	<img src="https://res.cloudinary.com/dpjtl8zu1/image/upload/v1696370295/LOGO_cmmin8.png">
 </div>
 Equipo "TEAMSOFT", donde la pasión se une a la innovación y la programacion transforma
 las ideas en realidad. Somos un grupo de estudiantes de desarrollo de software unidos unidos por una amor a la
