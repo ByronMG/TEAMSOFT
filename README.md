@@ -1,7 +1,6 @@
 # TEAMSOFT
 <div style="text-align: center;">
-	[<a><img src='https://i.postimg.cc/MXs5Rw3P/11.png' border='0' alt='11' width="500px"/></a>](https://postimg.cc/MXs5Rw3P)
-	<br>
+	[url=https://postimg.cc/MXs5Rw3P][img]https://i.postimg.cc/MXs5Rw3P/11.png[/img][/url]
 </div>
 Equipo "TEAMSOFT", donde la pasión se une a la innovación y la programacion transforma
 las ideas en realidad. Somos un grupo de estudiantes de desarrollo de software unidos unidos por una amor a la
