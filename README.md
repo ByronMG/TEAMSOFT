@@ -1,6 +1,6 @@
 # TEAMSOFT
 <div style="text-align: center;">
-	<a><img src='https://i.postimg.cc/MXs5Rw3P/11.png' border='0' alt='11'/></a>
+	<a><img src='https://i.postimg.cc/MXs5Rw3P/11.png' border='0' alt='11' width="500px"/></a>
 	<br>
 </div>
 Equipo "TEAMSOFT", donde la pasión se une a la innovación y la programacion transforma
